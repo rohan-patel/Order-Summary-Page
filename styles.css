@@ -179,3 +179,28 @@ body {
 .cancel-order p:active {
   transform: scale(0.95);
 }
+
+/* @media (max-width: 425px) {
+  .main {
+    height: auto;
+  }
+
+  .plan {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 20px;
+    background: var(--vary-pale-blue);
+    border-radius: 10px;
+    padding: 10px 20px;
+  }
+
+  .plan .plan-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+  }
+
+} */
