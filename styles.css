@@ -21,6 +21,8 @@ body {
   padding:0;
   background: var(--pale-blue);
   font-size: 13px;
+  /* totla width = 1519.2 px */
+  /* totla height = 721.6 */
 }
 
 .main {
@@ -31,8 +33,9 @@ body {
 
 .container {
   background: var(--pale-blue);
-  width: 1300px;
-  height: 625px;
+  width: 85.57%;
+  height: 86.61%;
+  min-width: 360px;
   background-repeat: no-repeat;
   position: relative;
   top: 50%;
@@ -53,7 +56,8 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 325px;
+  width: 25%;
+  min-width: 320px;
   display: flex;
   flex-direction: column;
   background: white;
