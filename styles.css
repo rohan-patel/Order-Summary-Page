@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root {
+--pale-blue: hsl(225, 100%, 94%);
+--bright-blue: hsl(245, 75%, 52%);
+--hover-bright-blue: hsla(245, 75%, 52%, 0.4);
+--vary-pale-blue: hsl(225, 100%, 98%);
+--desaturated-blue: hsl(224, 23%, 55%);
+--dark-blue: hsl(223, 47%, 23%);
+}
+
+html {
+  margin: 0;
+  padding:0;
+}
+
+body {
+  font-family: 'Red Hat Display', sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding:0;
+  background: var(--pale-blue);
+  font-size: 13px;
+}
+
+.main {
+  background-image: url(./images/blue-snow.png);
+  position: relative;
+  height: 100vh;
+}
+
+.container {
+  background: var(--pale-blue);
+  width: 1300px;
+  height: 625px;
+  background-repeat: no-repeat;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* border-radius: 15px; */
+  overflow: hidden;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.container > img {
+  width: 100%;
+  height: 45%;
+}
+
+.card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 325px;
+  display: flex;
+  flex-direction: column;
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card .image > img {
+  width: 100%;
+  overflow: hidden;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  gap: 20px;
+}
+
+.details .summary-title {
+  justify-content: center;
+  margin: auto;
+}
+
+.summary-title .order-title {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 20px;
+  margin: 25px 0 auto auto;
+}
+
+.summary-description p {
+  margin: 0 40px;
+  text-align: center;
+  color: var(--desaturated-blue);
+}
+
+.plan {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 20px;
+  background: var(--vary-pale-blue);
+  border-radius: 10px;
+  padding: 10px 20px;
+}
+
+.plan .plan-details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.plan-details-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.plan-details-text .text {
+  align-items: flex-end;
+  margin: 0;
+  font-weight: bold;
+}
+
+.plan-details-text .amt {
+  align-items: flex-start;
+  margin: 0;
+  color: var(--desaturated-blue);
+}
+
+.plan-change {
+  font-size: 11px;;
+}
+
+.plan-change a:hover {
+  text-decoration: none;
+  color: hsla(245, 75%, 52%, 0.75);;
+}
+
+.payment {
+  background: var(--bright-blue);
+  border-radius: 10px;
+  margin: 5px 40px;
+  text-align: center;
+  color: white;
+  box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.2);
+  
+}
+
+.payment:hover {
+  background: hsla(245, 75%, 52%, 0.75);
+  cursor: pointer;
+}
+
+.payment:active {
+  transform: scale(0.98);
+}
+
+.cancel-order {
+  background: transparent;
+  justify-content: center;
+  display: flex;
+  color: var(--desaturated-blue);
+  margin-bottom: 20px;
+}
+
+.cancel-order .cancel-writting {
+  margin: 0;
+}
+
+.cancel-order p:hover {
+  color: black;
+  cursor: pointer;
+}
+
+.cancel-order p:active {
+  transform: scale(0.95);
+}
